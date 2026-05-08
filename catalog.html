@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catalog · ZESTA FRUITS</title>
+<meta name="description" content="ZESTA FRUITS catalog — wholesale fruit positions filtered by origin country and category. Direct import from Poland, China, Iran.">
+<meta property="og:title" content="ZESTA FRUITS — Catalog">
+<meta property="og:description" content="Wholesale fruit catalog filtered by origin and category.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.svg">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="header__brand">
+    <span class="header__brand-mark">
+      <svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true">
+        <circle cx="18" cy="18" r="17" fill="#0E2615" stroke="#9DD55C" stroke-width="1.4"/>
+        <path d="M11 12 H25 L13 24 H25" fill="none" stroke="#9DD55C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 8c2 .8 3.6 2.4 4.4 4.4" fill="none" stroke="#9DD55C" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span>ZESTA</span>
+  </a>
+  <nav class="header__nav">
+    <a href="index.html"   data-page="index"    data-i18n="nav.home">Bosh sahifa</a>
+    <a href="catalog.html" data-page="catalog"  data-i18n="nav.catalog">Katalog</a>
+    <a href="horeca.html"  data-page="horeca"   data-i18n="nav.horeca">HoReCa</a>
+    <a href="business.html"data-page="business" data-i18n="nav.business">Biznes uchun</a>
+    <a href="about.html"   data-page="about"    data-i18n="nav.about">Biz haqimizda</a>
+    <a href="contacts.html"data-page="contacts" data-i18n="nav.contacts">Bog'lanish</a>
+  </nav>
+  <div class="header__right">
+    <div class="lang"><button data-lang="ru">RU</button><button data-lang="uz">UZ</button><button data-lang="en">EN</button></div>
+    <button class="menu-toggle" type="button" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-hidden="true">
+  <a href="index.html"    data-i18n="nav.home">Bosh sahifa</a>
+  <a href="catalog.html"  data-i18n="nav.catalog">Katalog</a>
+  <a href="horeca.html"   data-i18n="nav.horeca">HoReCa</a>
+  <a href="business.html" data-i18n="nav.business">Biznes uchun</a>
+  <a href="about.html"    data-i18n="nav.about">Biz haqimizda</a>
+  <a href="contacts.html" data-i18n="nav.contacts">Bog'lanish</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="min-height:auto; padding-top:160px; padding-bottom:60px">
+  <div class="wrap hero__inner" style="grid-template-columns:1fr">
+    <div>
+      <p class="eyebrow" data-i18n="nav.catalog">KATALOG</p>
+      <h1 data-split data-i18n="cat.h1.full">Katalog. To'liq.</h1>
+      <p class="hero__lead" data-i18n="cat.lead">Barcha doimiy pozitsiyalar va mavsumiy qo'shimchalar</p>
+    </div>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<section class="section" style="padding-top:48px; padding-bottom:32px">
+  <div class="wrap">
+    <div class="filters" id="catFilters" data-group="country">
+      <button class="chip is-active" data-filter="country" data-value="all" data-i18n="cat.fil.all">BARCHASI</button>
+      <button class="chip" data-filter="country" data-value="PL">PL · POLSHA</button>
+      <button class="chip" data-filter="country" data-value="CN">CN · XITOY</button>
+      <button class="chip" data-filter="country" data-value="IR">IR · ERON</button>
+    </div>
+    <div class="filters" style="margin-top:14px" data-group="category">
+      <button class="chip is-active" data-filter="category" data-value="all" data-i18n="cat.fil.all">BARCHASI</button>
+      <button class="chip" data-filter="category" data-value="citrus" data-i18n="cat.cat.citrus">Sitrus</button>
+      <button class="chip" data-filter="category" data-value="berry" data-i18n="cat.cat.berry">Rezavorlar</button>
+      <button class="chip" data-filter="category" data-value="tropical" data-i18n="cat.cat.tropical">Tropik</button>
+      <button class="chip" data-filter="category" data-value="stone" data-i18n="cat.cat.stone">Danakli</button>
+      <button class="chip" data-filter="category" data-value="pome" data-i18n="cat.cat.pome">Urug'li</button>
+      <button class="chip" data-filter="category" data-value="dates" data-i18n="cat.cat.dates">Xurmolar</button>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG GRID -->
+<section class="section" style="padding-top:24px">
+  <div class="wrap">
+    <div class="grid grid-3" id="catalogGrid"></div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="section section--dark">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:0">
+      <div class="section-head__title">
+        <p class="eyebrow" data-i18n="cta.eyebrow">NARXNI SO'RASH</p>
+        <h2><span data-i18n="cta.title">Hamkorlikka</span> <em data-i18n="cta.titleEm">tayyormisiz?</em></h2>
+        <p style="margin-top:18px" data-i18n="cta.lead">Ariza qoldiring — prays-list yuboramiz</p>
+        <p style="margin-top:32px"><a href="contacts.html" class="btn btn--primary" data-magnetic="0.25"><span data-i18n="cta.price">Narx so'rash</span> <span class="arrow">→</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__brand-mark">Z FRUITS</span>
+        <p data-i18n="foot.about">ZESTA FRUITS</p>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="foot.col1">NAVIGATSIYA</h5>
+        <ul>
+          <li><a href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
+          <li><a href="horeca.html" data-i18n="nav.horeca">HoReCa</a></li>
+          <li><a href="business.html" data-i18n="nav.business">Biznes uchun</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Biz haqimizda</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="foot.col2">ALOQA</h5>
+        <ul>
+          <li><a href="tel:+998781139001">+998 78 113 9001</a></li>
+          <li><a href="tel:+998947700990">+998 94 770 09 90</a></li>
+          <li><a href="https://t.me/zesta_fruits_llc">@zesta_fruits_llc</a></li>
+          <li>Yunusobod, Chinobod 45</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 data-i18n="foot.col3">IJTIMOIY</h5>
+        <ul>
+          <li><a href="https://instagram.com/zesta_fruits_llc">Instagram</a></li>
+          <li><a href="https://t.me/zesta_fruits">Telegram channel</a></li>
+          <li><a href="https://t.me/zesta_fruits_llc">Telegram contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="foot.rights">© 2026 ZESTA FRUITS MChJ · STIR 312697534</span>
+      <span><span data-i18n="foot.credit">Yaratdi</span> · AR7</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/effects.js" defer></script>
+<script>
+/* Catalog data — replace prices with current weekly pricelist when AR7 confirms */
+const CATALOG = [
+  { iso: 'IR', country: { ru: 'Иран', uz: 'Eron', en: 'Iran' }, category: 'dates',    name: { ru: 'Финики Mazzafati', uz: 'Mazzafati xurmosi', en: 'Mazzafati Dates' }, hs: '0804.10', price: { ru: 'PREMIUM', uz: 'PREMIUM', en: 'PREMIUM' } },
+  { iso: 'IR', country: { ru: 'Иран', uz: 'Eron', en: 'Iran' }, category: 'dates',    name: { ru: 'Финики Piarom', uz: 'Piarom xurmosi', en: 'Piarom Dates' }, hs: '0804.10', price: { ru: 'ПОД ЗАКАЗ', uz: 'BUYURTMA BO\'YICHA', en: 'BY ORDER' } },
+  { iso: 'PL', country: { ru: 'Польша', uz: 'Polsha', en: 'Poland' }, category: 'pome', name: { ru: 'Яблоки Gala', uz: 'Gala olmasi', en: 'Gala Apples' }, hs: '0808.10', price: { ru: 'СВЕЖАЯ ПАРТИЯ', uz: 'YANGI PARTIYA', en: 'FRESH BATCH' } },
+  { iso: 'PL', country: { ru: 'Польша', uz: 'Polsha', en: 'Poland' }, category: 'pome', name: { ru: 'Яблоки Granny Smith', uz: 'Granny Smith olmasi', en: 'Granny Smith Apples' }, hs: '0808.10', price: { ru: 'СВЕЖАЯ ПАРТИЯ', uz: 'YANGI PARTIYA', en: 'FRESH BATCH' } },
+  { iso: 'PL', country: { ru: 'Польша', uz: 'Polsha', en: 'Poland' }, category: 'pome', name: { ru: 'Яблоки Red Delicious', uz: 'Red Delicious olmasi', en: 'Red Delicious Apples' }, hs: '0808.10', price: { ru: 'СВЕЖАЯ ПАРТИЯ', uz: 'YANGI PARTIYA', en: 'FRESH BATCH' } },
+  { iso: 'CN', country: { ru: 'Китай', uz: 'Xitoy', en: 'China' }, category: 'citrus', name: { ru: 'Мандарины', uz: 'Mandarin', en: 'Mandarins' }, hs: '0805.20', price: { ru: '23 990 СУМ/КГ', uz: '23 990 so\'m/kg', en: '23,990 UZS/kg' } },
+  { iso: 'CN', country: { ru: 'Китай', uz: 'Xitoy', en: 'China' }, category: 'citrus', name: { ru: 'Помело', uz: 'Pomelo', en: 'Pomelo' }, hs: '0805.40', price: { ru: 'ПО СЕЗОНУ', uz: 'MAVSUM BO\'YICHA', en: 'SEASONAL' } },
+  { iso: 'CN', country: { ru: 'Китай', uz: 'Xitoy', en: 'China' }, category: 'tropical', name: { ru: 'Ананасы', uz: 'Ananas', en: 'Pineapples' }, hs: '0804.30', price: { ru: 'ОТ 19 900 СУМ', uz: '19 900 so\'mdan', en: 'FROM 19,900 UZS' } },
+  { iso: 'CN', country: { ru: 'Китай', uz: 'Xitoy', en: 'China' }, category: 'tropical', name: { ru: 'Маракуйя', uz: 'Marakuya', en: 'Passion Fruit' }, hs: '0810.90', price: { ru: 'ОТ 9 990 СУМ / 2 ШТ', uz: '9 990 so\'mdan / 2 dona', en: 'FROM 9,990 UZS / 2 PCS' } },
+  { iso: 'CN', country: { ru: 'Китай', uz: 'Xitoy', en: 'China' }, category: 'tropical', name: { ru: 'Манго', uz: 'Mango', en: 'Mango' }, hs: '0804.50', price: { ru: 'ПО СЕЗОНУ', uz: 'MAVSUM BO\'YICHA', en: 'SEASONAL' } },
+  { iso: 'CN', country: { ru: 'Китай', uz: 'Xitoy', en: 'China' }, category: 'tropical', name: { ru: 'Драконий фрукт', uz: 'Pitahaya', en: 'Dragon Fruit' }, hs: '0810.90', price: { ru: 'ПО СЕЗОНУ', uz: 'MAVSUM BO\'YICHA', en: 'SEASONAL' } },
+  { iso: 'CN', country: { ru: 'Китай', uz: 'Xitoy', en: 'China' }, category: 'berry', name: { ru: 'Черника', uz: 'Ko\'k mevali', en: 'Blueberries' }, hs: '0810.40', price: { ru: 'ПО СЕЗОНУ', uz: 'MAVSUM BO\'YICHA', en: 'SEASONAL' } }
+];
+
+const grid = document.getElementById('catalogGrid');
+const filterState = { country: 'all', category: 'all' };
+
+function lang() { return localStorage.getItem('zesta.lang') || 'uz'; }
+
+function render() {
+  const L = lang();
+  const items = CATALOG.filter((it) => (filterState.country === 'all' || it.iso === filterState.country) && (filterState.category === 'all' || it.category === filterState.category));
+  grid.innerHTML = items.map((it) => `
+    <article class="card" data-tilt="6">
+      <div class="card__iso">${it.iso}</div>
+      <div class="card__country">${it.country[L]}</div>
+      <h3 class="card__title">${it.name[L]}</h3>
+      <div class="card__meta">
+        <span class="card__hs">HS ${it.hs}</span>
+        <span class="card__price">${it.price[L]}</span>
+      </div>
+    </article>
+  `).join('');
+  // Re-trigger tilt on new cards
+  if (window.matchMedia('(hover: hover)').matches) {
+    grid.querySelectorAll('[data-tilt]').forEach((el) => {
+      el.classList.add('tilt-host');
+      const glare = document.createElement('div'); glare.className = 'tilt-glare'; el.appendChild(glare);
+      const max = parseFloat(el.dataset.tilt) || 6;
+      el.addEventListener('mousemove', (e) => {
+        const r = el.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width;
+        const py = (e.clientY - r.top) / r.height;
+        el.style.transform = `perspective(900px) rotateX(${(0.5 - py) * max}deg) rotateY(${(px - 0.5) * max}deg)`;
+        glare.style.setProperty('--gx', px * 100 + '%');
+        glare.style.setProperty('--gy', py * 100 + '%');
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    });
+  }
+}
+
+document.querySelectorAll('[data-filter]').forEach((b) => {
+  b.addEventListener('click', () => {
+    const k = b.dataset.filter;
+    filterState[k] = b.dataset.value;
+    document.querySelectorAll(`[data-filter="${k}"]`).forEach((el) => el.classList.toggle('is-active', el === b));
+    render();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', render);
+window.addEventListener('storage', (e) => { if (e.key === 'zesta.lang') render(); });
+// Re-render when our switcher changes (no storage event in same tab)
+document.querySelectorAll('.lang button').forEach((b) => b.addEventListener('click', () => setTimeout(render, 0)));
+</script>
+</body>
+</html>

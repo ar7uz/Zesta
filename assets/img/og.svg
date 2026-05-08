@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg" cx="80%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#1A3522" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0E2615" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0A0F0A"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g font-family="Bodoni Moda, Georgia, serif" font-style="italic" font-weight="700">
+    <text x="80" y="240" font-size="240" fill="#9DD55C" letter-spacing="-12">PL</text>
+    <text x="320" y="240" font-size="240" fill="#D9994F" letter-spacing="-12">CN</text>
+    <text x="560" y="240" font-size="240" fill="#F4EFE0" letter-spacing="-12">IR</text>
+  </g>
+  <g font-family="Manrope, sans-serif">
+    <text x="80" y="380" font-size="58" font-weight="700" fill="#F4EFE0">A world in one box.</text>
+    <text x="80" y="440" font-size="26" font-weight="400" fill="rgba(244,239,224,0.7)">Wholesale fruit import for Tashkent · zesta.uz</text>
+  </g>
+  <g font-family="Bodoni Moda, Georgia, serif" font-style="italic" font-weight="900">
+    <text x="80" y="565" font-size="44" fill="#9DD55C">Z FRUITS</text>
+  </g>
+</svg>
