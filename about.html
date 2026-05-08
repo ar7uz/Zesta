@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About · ZESTA FRUITS</title>
+<meta name="description" content="ZESTA FRUITS LLC — wholesale fruit importer in Tashkent. Registered 2026, direct supply from Poland, China, Iran. Verified entity, transparent routes.">
+<meta property="og:title" content="ZESTA FRUITS — About">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.svg">
+<link rel="stylesheet" href="assets/css/main.css">
+<style>
+  /* Globe stage flat fallback (mobile / reduced-motion) */
+  .globe-stage.is-flat .globe-stage__canvas {
+    background:
+      radial-gradient(ellipse 70% 60% at 60% 50%, rgba(157,213,92,0.18) 0%, transparent 50%),
+      var(--c-ink);
+  }
+  .globe-stage.is-flat .globe-stage__canvas::before {
+    content: 'PL · CN · IR · UZ';
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    font-family: var(--f-display); font-style: italic; font-weight: 700;
+    font-size: clamp(36px, 6vw, 72px); color: var(--c-lime); letter-spacing: -0.02em;
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="header__brand">
+    <span class="header__brand-mark">
+      <svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true">
+        <circle cx="18" cy="18" r="17" fill="#0E2615" stroke="#9DD55C" stroke-width="1.4"/>
+        <path d="M11 12 H25 L13 24 H25" fill="none" stroke="#9DD55C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 8c2 .8 3.6 2.4 4.4 4.4" fill="none" stroke="#9DD55C" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span>ZESTA</span>
+  </a>
+  <nav class="header__nav">
+    <a href="index.html"   data-page="index"    data-i18n="nav.home">Bosh sahifa</a>
+    <a href="catalog.html" data-page="catalog"  data-i18n="nav.catalog">Katalog</a>
+    <a href="horeca.html"  data-page="horeca"   data-i18n="nav.horeca">HoReCa</a>
+    <a href="business.html"data-page="business" data-i18n="nav.business">Biznes uchun</a>
+    <a href="about.html"   data-page="about"    data-i18n="nav.about">Biz haqimizda</a>
+    <a href="contacts.html"data-page="contacts" data-i18n="nav.contacts">Bog'lanish</a>
+  </nav>
+  <div class="header__right">
+    <div class="lang"><button data-lang="ru">RU</button><button data-lang="uz">UZ</button><button data-lang="en">EN</button></div>
+    <button class="menu-toggle" type="button" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-hidden="true">
+  <a href="index.html"    data-i18n="nav.home">Bosh sahifa</a>
+  <a href="catalog.html"  data-i18n="nav.catalog">Katalog</a>
+  <a href="horeca.html"   data-i18n="nav.horeca">HoReCa</a>
+  <a href="business.html" data-i18n="nav.business">Biznes uchun</a>
+  <a href="about.html"    data-i18n="nav.about">Biz haqimizda</a>
+  <a href="contacts.html" data-i18n="nav.contacts">Bog'lanish</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="min-height:auto; padding-bottom:60px">
+  <div class="wrap hero__inner" style="grid-template-columns:1fr">
+    <div>
+      <p class="eyebrow" data-i18n="ab.eyebrow">KOMPANIYA HAQIDA</p>
+      <h1 data-split data-i18n="ab.h1.full" style="max-width:18ch">Mevalar olami va olam mevalari.</h1>
+      <p class="hero__lead" style="max-width:60ch" data-i18n="ab.lead">ZESTA FRUITS — Polsha, Xitoy, Eron va boshqa hududlardan ulgurji importchi</p>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBE -->
+<section class="section section--dark" id="globe">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__title">
+        <p class="eyebrow" data-blur data-i18n="globe.eyebrow">IMPORT YO'NALISHLARI</p>
+        <h2 data-blur data-i18n="ab.routes.title">Import yo'nalishlari</h2>
+      </div>
+      <p class="section-head__lead" data-blur data-i18n="ab.routes.lead">Globus haqiqiy kelib chiqish nuqtalarini ko'rsatadi</p>
+    </div>
+
+    <div class="globe-stage" id="globeStage">
+      <div class="globe-stage__canvas"></div>
+      <div class="globe-stage__legend">
+        <span>PL · CN · IR — sources</span>
+        <span>UZ — distribution hub</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:0">
+      <div class="section-head__title">
+        <p class="eyebrow" data-i18n="cta.eyebrow">NARXNI SO'RASH</p>
+        <h2><span data-i18n="cta.title">Hamkorlikka</span> <em data-i18n="cta.titleEm">tayyormisiz?</em></h2>
+        <p style="margin-top:18px" data-i18n="cta.lead">Ariza qoldiring</p>
+        <p style="margin-top:32px"><a href="contacts.html" class="btn btn--primary" data-magnetic="0.25"><span data-i18n="cta.price">Narx so'rash</span> <span class="arrow">→</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand"><span class="footer__brand-mark">Z FRUITS</span><p data-i18n="foot.about">ZESTA FRUITS</p></div>
+      <div class="footer__col"><h5 data-i18n="foot.col1">NAVIGATSIYA</h5><ul>
+        <li><a href="catalog.html" data-i18n="nav.catalog">Katalog</a></li>
+        <li><a href="horeca.html" data-i18n="nav.horeca">HoReCa</a></li>
+        <li><a href="business.html" data-i18n="nav.business">Biznes uchun</a></li>
+        <li><a href="about.html" data-i18n="nav.about">Biz haqimizda</a></li>
+      </ul></div>
+      <div class="footer__col"><h5 data-i18n="foot.col2">ALOQA</h5><ul>
+        <li><a href="tel:+998781139001">+998 78 113 9001</a></li>
+        <li><a href="tel:+998947700990">+998 94 770 09 90</a></li>
+        <li><a href="https://t.me/zesta_fruits_llc">@zesta_fruits_llc</a></li>
+        <li>Yunusobod, Chinobod 45</li>
+      </ul></div>
+      <div class="footer__col"><h5 data-i18n="foot.col3">IJTIMOIY</h5><ul>
+        <li><a href="https://instagram.com/zesta_fruits_llc">Instagram</a></li>
+        <li><a href="https://t.me/zesta_fruits">Telegram channel</a></li>
+        <li><a href="https://t.me/zesta_fruits_llc">Telegram contact</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="foot.rights">© 2026 ZESTA FRUITS MChJ · STIR 312697534</span>
+      <span><span data-i18n="foot.credit">Yaratdi</span> · AR7</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/effects.js" defer></script>
+<script src="assets/js/globe.js" defer></script>
+</body>
+</html>
